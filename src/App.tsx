@@ -146,6 +146,7 @@ const getColor = (index: number) => {
           <p className="text-gray-500">Upload and visualize your data with interactive charts and tables</p>
         </div>
 
+
         {/* File Upload Card */}
         <Card className="mb-8 bg-gray-900 border border-black/12 rounded-2xl shadow-minimal">
           <CardHeader className="flex gap-3 px-6 py-5 border-b border-black/10">
@@ -268,7 +269,7 @@ const getColor = (index: number) => {
             )}
 
             {/* Data Table Section */}
-            <Card className="bg-gray-900 border border-black/12 rounded-2xl shadow-minimal">
+            <Card className="bg-gray-900 border border-black/12 rounded-2xl shadow-minimal mb-12">
               <CardHeader className="flex gap-3 px-6 py-5 border-b border-black/10">
                 <div className="flex flex-col">
                   <p className="text-lg font-semibold text-gray-100">📋 Data Table</p>
@@ -281,6 +282,36 @@ const getColor = (index: number) => {
             </Card>
           </>
         )}
+
+        {/* Footer */}
+        <footer className="mt-16 pt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Left Section - Company Info */}
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-3">
+                <h3 className="text-xl font-bold text-gray-100">Test Data Engine</h3>
+                <span className="text-gray-600">•</span>
+                <span className="text-lg text-gray-400 font-medium">v1.0.1</span>
+              </div>
+              <p className="text-sm text-gray-500">Advanced data visualization & analysis platform</p>
+            </div>
+
+            {/* Right Section - Copyright */}
+            <div className="text-center md:text-right">
+              <p className="text-base text-gray-400">
+                © 2026 <span className="font-semibold text-gray-300">Citrus Play</span>
+              </p>
+              <p className="text-xs text-gray-600 mt-1">All rights reserved</p>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="mt-6 pt-6 border-t border-gray-800/50">
+            <p className="text-center text-xs text-gray-600">
+              Crafted with <span className="text-red-500">❤</span> for data excellence
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
